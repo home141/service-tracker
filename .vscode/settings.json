@@ -1,0 +1,37 @@
+{
+  "search.exclude": {
+    "**/package-lock.json": true,
+    "**/uv.lock": true
+  },
+  "js/ts.experimental.useTsgo": true,
+  "json.schemaDownload.trustedDomains": {
+    "https://docs.renovatebot.com/renovate-schema.json": true
+  },
+  "oxc.typeAware": true,
+  "python.languageServer": "Default",
+  "ty.disableLanguageServices": true,
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[python]": {
+      "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  }
+}
