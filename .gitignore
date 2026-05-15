@@ -1,0 +1,32 @@
+# General
+dist/
+
+# Python
+__pycache__/
+*.egg-info/
+.venv/
+
+# Node.js
+node_modules/
+
+# TypeScript
+*.tsbuildinfo
+
+# Lefthook
+/.lefthook-local/
+/.lefthook-local.yml
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Windows
+desktop.ini
+Thumbs.db
+
+# macOS
+.DS_Store
