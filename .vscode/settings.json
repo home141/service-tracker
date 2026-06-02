@@ -1,6 +1,7 @@
 {
   "search.exclude": {
-    "**/package-lock.json": true,
+    ".devcontainer/devcontainer-lock.json": true,
+    "**/bun.lock": true,
     "**/uv.lock": true
   },
   "js/ts.experimental.useTsgo": true,
@@ -23,7 +24,7 @@
     "editor.defaultFormatter": "oxc.oxc-vscode"
   },
   "[python]": {
-      "editor.defaultFormatter": "charliermarsh.ruff"
+    "editor.defaultFormatter": "charliermarsh.ruff"
   },
   "[toml]": {
     "editor.defaultFormatter": "oxc.oxc-vscode"
