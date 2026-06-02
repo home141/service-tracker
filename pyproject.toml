@@ -1,0 +1,43 @@
+[project]
+name = "service-tracker"
+version = "0.1.0"
+requires-python = "~=3.14.5"
+dependencies = ["service-tracker-server"]
+
+[dependency-groups]
+dev = [
+  "committed==1.1.11",
+  "editorconfig-checker==3.6.1",
+  "lefthook==2.1.8",
+  "ruff==0.15.14",
+  "ty==0.0.39",
+  "typos==1.46.2",
+]
+
+[tool.ruff]
+line-length = 79
+format.docstring-code-format = true
+format.docstring-code-line-length = 72
+lint.select = ["ALL"]
+lint.ignore = [
+  "INP001", # implicit-namespace-package
+  "D203",   # one-blank-line-before-class
+  "D213",   # multi-line-summary-second-line
+]
+lint.per-file-ignores."tests/**.py" = [
+  "S101", # assert
+]
+lint.pycodestyle.max-doc-length = 72
+
+[tool.ty]
+terminal.error-on-warning = true
+
+[tool.typos]
+files.extend-exclude = ["uv.lock"]
+default.unicode = false
+
+[tool.uv.sources]
+service-tracker-server = { workspace = true }
+
+[tool.uv.workspace]
+members = ["server"]

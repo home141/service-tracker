@@ -1,0 +1,18 @@
+[build-system]
+requires = ["uv-build==0.11.16"]
+build-backend = "uv_build"
+
+[project]
+name = "service-tracker-server"
+version = "0.1.0"
+requires-python = "~=3.14.5"
+dependencies = [
+  "cryptography~=48.0.0",
+  "fastapi~=0.136.1",
+  "granian[reload]~=2.7.4",
+  "otpauth~=2.2.1",
+  "sqlmodel~=0.0.38",
+]
+
+[project.scripts]
+service-tracker-server = "service_tracker_server.__main__:main"
