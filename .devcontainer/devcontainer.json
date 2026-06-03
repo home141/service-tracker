@@ -1,6 +1,6 @@
 {
   "name": "Service Tracker Dev Container",
-  "forwardPorts": [8000],
+  "forwardPorts": [62000, 62001],
   "overrideCommand": true,
   "mounts": [
     {
