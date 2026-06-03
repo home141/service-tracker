@@ -29,6 +29,6 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
-  "onCreateCommand": "bash ./.devcontainer/scripts/on-create.sh",
-  "postCreateCommand": "bash ./.devcontainer/scripts/post-create.sh"
+  "postCreateCommand": "bash ./.devcontainer/scripts/post-create.sh",
+  "postStartCommand": "bash ./.devcontainer/scripts/post-start.sh"
 }

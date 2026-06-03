@@ -2,6 +2,3 @@
 
 # Install Python
 uv python install
-
-# Install Node.js
-vp env install
