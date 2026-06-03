@@ -1,4 +1,24 @@
 services:
   server:
     build:
-      context: ./server
+      context: .
+      dockerfile: ./server/Dockerfile
+    depends_on:
+      - db
+    ports:
+      - "62001:62001"
+
+  db:
+    container_name: db
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    image: postgres:18.4
+    ports:
+      - "62002:5432"
+    volumes:
+      - db_data:/var/lib/postgresql
+
+volumes:
+  db_data:

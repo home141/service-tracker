@@ -1,5 +1,6 @@
 # General
 dist/
+.env
 
 # Python
 __pycache__/

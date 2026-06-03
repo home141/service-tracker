@@ -1,7 +1,7 @@
 {
   "name": "Service Tracker Dev Container",
   "forwardPorts": [62000, 62001],
-  "overrideCommand": true,
+  "remoteUser": "vscode",
   "mounts": [
     {
       "source": "${localEnv:HOME}${localEnv:USERPROFILE}/.config/git",
@@ -9,6 +9,9 @@
       "type": "bind"
     }
   ],
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2.5.9": {}
+  },
   "customizations": {
     "vscode": {
       "extensions": [

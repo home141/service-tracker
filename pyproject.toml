@@ -20,6 +20,7 @@ format.docstring-code-format = true
 format.docstring-code-line-length = 72
 lint.select = ["ALL"]
 lint.ignore = [
+  "S104",   # hardcoded-bind-all-interfaces
   "INP001", # implicit-namespace-package
   "D203",   # one-blank-line-before-class
   "D213",   # multi-line-summary-second-line

@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/base:debian
+FROM python:3.14.5-slim
 
 # Install uv
 COPY --from=ghcr.io/astral-sh/uv:0.11.16 /uv /uvx /bin/

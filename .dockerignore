@@ -1,0 +1,10 @@
+# General
+dist/
+
+# Python
+__pycache__/
+*.egg-info/
+.venv/
+
+# Node.js
+node_modules/

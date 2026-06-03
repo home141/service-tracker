@@ -11,7 +11,7 @@ RUN uv sync --frozen -n --no-dev
 
 # Runtime Stage
 
-FROM python:3.14.5-slim AS runner
+FROM python:3.14.5-slim
 
 COPY --from=builder /workspace/.venv /workspace/.venv
 ENV PATH="/workspace/.venv/bin:$PATH"
@@ -20,3 +20,4 @@ COPY . /workspace
 
 WORKDIR /workspace
 
+CMD ["service-tracker-server"]
