@@ -1,7 +1,7 @@
 FROM python:3.14.5-slim
 
 # Install uv
-COPY --from=ghcr.io/astral-sh/uv:0.11.16 /uv /uvx /bin/
+COPY --from=ghcr.io/astral-sh/uv:0.11.19 /uv /uvx /bin/
 
 # Install Node.js
 COPY --from=node:26.3.0-slim /usr/local/ /usr/local/
