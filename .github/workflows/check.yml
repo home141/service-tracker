@@ -1,0 +1,29 @@
+name: Check
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  check:
+    name: Check
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout ${{ github.repository }}
+        uses: actions/checkout@v6.0.3
+      - name: Install Python
+        uses: actions/setup-python@v6.2.0
+        with:
+          python-version-file: pyproject.toml
+      - name: Install uv
+        uses: astral-sh/setup-uv@v8.2.0
+        with:
+          enable-cache: true
+      - name: Install dependencies
+        run: uv sync
+      - name: Prune uv cache
+        run: uv cache prune --ci
