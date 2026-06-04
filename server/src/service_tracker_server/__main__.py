@@ -1,6 +1,7 @@
 """Run the service tracker server."""
 
 from argparse import ArgumentParser
+from pathlib import Path
 
 from granian import Granian
 from granian.constants import Interfaces
@@ -18,6 +19,7 @@ def main() -> None:
         62001,
         interface=Interfaces.ASGI,
         reload=args.dev,
+        reload_paths=[Path(__file__).parent],
     ).serve()
 
 
