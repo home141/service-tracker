@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":automergeAll",
+    ":disableDependencyDashboard",
+    ":label(dependencies)",
+    ":semanticCommits",
+    ":semanticPrefixChore"
+  ],
+  "assignees": ["@home141/owners"],
+  "automergeStrategy": "squash",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["at any time"]
+  }
+}
