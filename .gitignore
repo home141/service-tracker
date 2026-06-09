@@ -13,6 +13,9 @@ node_modules/
 # TypeScript
 *.tsbuildinfo
 
+# React Router
+.react-router/
+
 # Lefthook
 /.lefthook-local/
 /.lefthook-local.yml

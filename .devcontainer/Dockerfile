@@ -1,5 +1,10 @@
 FROM python:3.14.5-slim
 
+# Install Node.js dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libatomic1 \
+    && rm -rf /var/lib/apt/lists/*
+
 # Install uv
 COPY --from=ghcr.io/astral-sh/uv:0.11.19 /uv /uvx /bin/
 

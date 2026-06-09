@@ -9,5 +9,5 @@ insert_final_newline = true
 [*.py]
 indent_size = 4
 
-[*.{json,md,toml,ts,yml}]
+[*.{css,html,json,md,toml,ts,tsx,yml}]
 indent_size = 2

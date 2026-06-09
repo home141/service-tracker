@@ -25,7 +25,8 @@
         "ms-python.vscode-python-envs",
         "oxc.oxc-vscode",
         "redhat.vscode-yaml",
-        "tamasfe.even-better-toml"
+        "tamasfe.even-better-toml",
+        "typescriptteam.native-preview"
       ]
     }
   },

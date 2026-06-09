@@ -11,6 +11,12 @@
   "oxc.typeAware": true,
   "python.languageServer": "Default",
   "ty.disableLanguageServices": true,
+  "[css]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[dockercompose]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
   "[github-actions-workflow]": {
     "editor.defaultFormatter": "oxc.oxc-vscode"
   },
@@ -30,6 +36,9 @@
     "editor.defaultFormatter": "oxc.oxc-vscode"
   },
   "[typescript]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[typescriptreact]": {
     "editor.defaultFormatter": "oxc.oxc-vscode"
   },
   "[yaml]": {
