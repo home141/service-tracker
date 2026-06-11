@@ -1,6 +1,6 @@
 # Build Stage
 
-FROM python:3.14.5-slim AS builder
+FROM python:3.14.6-slim AS builder
 
 COPY --from=ghcr.io/astral-sh/uv:0.11.20 /uv /uvx /bin/
 
@@ -11,7 +11,7 @@ RUN uv sync --frozen -n --no-dev
 
 # Runtime Stage
 
-FROM python:3.14.5-slim
+FROM python:3.14.6-slim
 
 COPY --from=builder /workspace/.venv /workspace/.venv
 ENV PATH="/workspace/.venv/bin:$PATH"
