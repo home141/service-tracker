@@ -3,11 +3,7 @@
   "forwardPorts": [62000, 62001],
   "remoteUser": "vscode",
   "mounts": [
-    {
-      "source": "${localEnv:HOME}${localEnv:USERPROFILE}/.config/git",
-      "target": "/home/vscode/.config/git",
-      "type": "bind"
-    }
+    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.config/git,target=/tmp/git-config,type=bind,readonly"
   ],
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2.5.9": {}
@@ -25,7 +21,7 @@
         "ms-python.vscode-python-envs",
         "oxc.oxc-vscode",
         "redhat.vscode-yaml",
-        "tamasfe.even-better-toml",
+        "tombi-toml.tombi",
         "typescriptteam.native-preview"
       ]
     }
@@ -33,6 +29,7 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
+  "onCreateCommand": "bash ./.devcontainer/scripts/on-create.sh",
   "postCreateCommand": "bash ./.devcontainer/scripts/post-create.sh",
   "postStartCommand": "bash ./.devcontainer/scripts/post-start.sh"
 }
