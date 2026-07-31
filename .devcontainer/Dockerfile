@@ -16,4 +16,4 @@ COPY --from=oven/bun:1.3.14-distroless /usr/local/bin/bun /usr/local/bin/
 RUN ln -s /usr/local/bin/bun /usr/local/bin/bunx
 
 # Install Hadolint
-COPY --from=hadolint/hadolint:v2.15.0 /bin/hadolint /bin/
+COPY --from=hadolint/hadolint:v2.15.1 /bin/hadolint /bin/
