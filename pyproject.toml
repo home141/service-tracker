@@ -7,7 +7,7 @@ dependencies = ["service-tracker-server"]
 [dependency-groups]
 dev = [
   "committed==1.1.11",
-  "editorconfig-checker==3.6.1",
+  "editorconfig-checker==3.8.0",
   "lefthook==2.1.10",
   "ruff==0.16.1",
   "ty==0.0.65",
