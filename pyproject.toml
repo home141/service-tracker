@@ -10,7 +10,7 @@ dev = [
   "editorconfig-checker==3.11.1",
   "lefthook==2.1.10",
   "ruff==0.16.2",
-  "ty==0.0.69",
+  "ty==0.0.70",
   "typos==1.49.0",
 ]
 
