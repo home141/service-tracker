@@ -266,11 +266,11 @@ wheels = [
 
 [[package]]
 name = "otpauth"
-version = "2.2.1"
+version = "2.2.2"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/47/99/e6c2adda32cc969b0b7c762e17c53575db5a31e4d55e08dee36c0f801573/otpauth-2.2.1.tar.gz", hash = "sha256:169a7adbd715fca687f6a66d02ccdbefc229fb49f8a634b958d286f908134d59", size = 26444, upload-time = "2025-05-09T11:12:01.635Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/e7/fb/866e1f78f71b82b5c739fdc4fff024dbaf739f83353a078e7cac6a069533/otpauth-2.2.2.tar.gz", hash = "sha256:d4306790ef1bfb3b18216cff7160328f89ea26a04f89079d7a60216f78084bcc", size = 26957, upload-time = "2026-08-22T14:07:43.427Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/75/2c/bc109eade0af850d38837b9835f812d8a8bcad1269bbcbdc136deb9fed30/otpauth-2.2.1-py3-none-any.whl", hash = "sha256:b7eabe0ed91cb67eb3054b7f517e4b4a7495fb30eaf2951897d41c8feef5de73", size = 6412, upload-time = "2025-05-09T11:12:00.485Z" },
+    { url = "https://files.pythonhosted.org/packages/e8/56/c00649368646688a6966ba736daf1509b9d814ba7dcdc91c3f364389b27f/otpauth-2.2.2-py3-none-any.whl", hash = "sha256:b27c7da3cf3d69c30914bbfbf9e1ac69b9b7bd33c1f241f48d20edae8587fe7d", size = 6410, upload-time = "2026-08-22T14:07:42.262Z" },
 ]
 
 [[package]]
