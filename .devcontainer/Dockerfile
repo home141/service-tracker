@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY --from=ghcr.io/astral-sh/uv:0.12.7 /uv /uvx /bin/
 
 # Install Node.js
-COPY --from=node:26.7.0-slim /usr/local/ /usr/local/
+COPY --from=node:26.8.1-slim /usr/local/ /usr/local/
 
 # Install Bun
 COPY --from=oven/bun:1.4.0-distroless /usr/local/bin/bun /usr/local/bin/
