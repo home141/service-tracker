@@ -12,7 +12,7 @@ COPY --from=ghcr.io/astral-sh/uv:0.12.9 /uv /uvx /bin/
 COPY --from=node:26.8.1-slim /usr/local/ /usr/local/
 
 # Install Bun
-COPY --from=oven/bun:1.4.0-distroless /usr/local/bin/bun /usr/local/bin/
+COPY --from=oven/bun:1.4.1-distroless /usr/local/bin/bun /usr/local/bin/
 RUN ln -s /usr/local/bin/bun /usr/local/bin/bunx
 
 # Install Hadolint
