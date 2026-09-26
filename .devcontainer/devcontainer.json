@@ -6,7 +6,7 @@
     "source=${localEnv:HOME}${localEnv:USERPROFILE}/.config/git,target=/tmp/git-config,type=bind,readonly"
   ],
   "features": {
-    "ghcr.io/devcontainers/features/common-utils:2.6.0": {}
+    "ghcr.io/devcontainers/features/common-utils:2.7.0": {}
   },
   "customizations": {
     "vscode": {
