@@ -1,4 +1,4 @@
-FROM python:3.14.7-slim
+FROM python:3.14.8-slim
 
 # Install Node.js dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
