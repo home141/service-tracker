@@ -11,7 +11,7 @@ dev = [
   "lefthook==2.1.17",
   "ruff==0.16.10",
   "ty==0.0.85",
-  "typos==1.50.3",
+  "typos==1.51.1",
 ]
 
 [tool.ruff]
