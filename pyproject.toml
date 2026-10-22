@@ -9,7 +9,7 @@ dev = [
   "committed==1.1.11",
   "editorconfig-checker==3.11.1",
   "lefthook==2.2.2",
-  "ruff==0.17.1",
+  "ruff==0.17.2",
   "ty==0.0.90",
   "typos==1.51.1",
 ]
