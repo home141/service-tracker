@@ -2,7 +2,7 @@
 
 FROM python:3.15.2-slim AS builder
 
-COPY --from=ghcr.io/astral-sh/uv:0.13.7 /uv /uvx /bin/
+COPY --from=ghcr.io/astral-sh/uv:0.13.8 /uv /uvx /bin/
 
 WORKDIR /workspace
 
