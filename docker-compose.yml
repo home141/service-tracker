@@ -14,7 +14,7 @@ services:
       POSTGRES_DB: ${DB_NAME}
       POSTGRES_USER: ${DB_USER}
       POSTGRES_PASSWORD: ${DB_PASSWORD}
-    image: postgres:18.7
+    image: postgres:19.0
     ports:
       - "62002:5432"
     volumes:
